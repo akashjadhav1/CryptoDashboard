@@ -121,9 +121,9 @@ export default function Pagination({ handleCryptocurrencyClick }) {
                 ></i>
               </NavLink>
              
-              {numbers.map((_, index) => (
+              {numbers.map((item, index) => (
                 <div
-                  key={_.index}
+                  key={item.index}
                   className={`pt-2 border ${
                     currentPage === index + 1 ? "active bg-blue-400 " : ""
                   }`}
